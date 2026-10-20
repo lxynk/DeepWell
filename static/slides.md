@@ -237,7 +237,7 @@
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center">
 
 <div>
-<img src="/mount/src/deepwell/static/photo_1.png" style="width:100%;max-height:390px;object-fit:contain">
+<img src="app/static/photo_1.png" style="width:100%;max-height:390px;object-fit:contain">
 </div>
 
 <div style="font-size:0.78em;line-height:1.35">
@@ -261,7 +261,7 @@ Use existing borehole records and spatial data to reduce uncertainty before dril
 
 ### Progress has been made, but billions of people are still left behind.
 
-![Global water-access statistics](/app/static/global_water_stats.svg)
+![Global water-access statistics](app/static/global_water_stats.svg)
 
 ---
 
@@ -269,7 +269,7 @@ Use existing borehole records and spatial data to reduce uncertainty before dril
 
 ### Global averages hide large regional gaps
 
-![Regional drinking-water coverage](/app/static/regional_coverage.svg)
+![Regional drinking-water coverage](app/static/regional_coverage.svg)
 
 ---
 
@@ -321,7 +321,7 @@ The current success model is only one component of that larger goal.
 
 ## The data
 
-![Data cleaning funnel](/app/static/data_funnel.svg)
+![Data cleaning funnel](app/static/data_funnel.svg)
 
 The original records required substantial cleaning and auditing:
 - checking coordinates
@@ -334,7 +334,7 @@ The original records required substantial cleaning and auditing:
 
 ## The features
 
-![DeepWell feature groups](/app/static/feature_groups.svg)
+![DeepWell feature groups](app/static/feature_groups.svg)
 
 The goal is not simply to add more variables. It is to test whether each feature group provides useful information beyond what the model already knows, in an attempt to describe the landscape around each location.
 
@@ -357,13 +357,13 @@ The workflow uses spatially aware cross-validation across geographically distinc
 
 Optuna studies have been run for **Random Forest, XGBoost, and LightGBM** to find the best hyperparameter configurations.
 
-![Optuna dashboard](/app/static/assets/optuna_xgb.png)
+![Optuna dashboard](app/static/assets/optuna_xgb.png)
 
 ---
 
 ## The results
 
-![Best current model results](/app/static/model_results.svg)
+![Best current model results](app/static/model_results.svg)
 
 **Feature set E+T+A15+R+LUP:** elevation, terrain, hydrological accumulation, distance to rivers, and a hydrological landform measure.
 
@@ -390,7 +390,7 @@ It can help users:
 
 ### A shared data resource—and a way to guide new data collection
 
-![Potential data and analysis feedback loop](/app/static/app_learning_loop.svg)
+![Potential data and analysis feedback loop](app/static/app_learning_loop.svg)
 
 **1. A practical place to store borehole information.** A shared, structured repository could help drilling teams record locations, outcomes, yield, water quality, and operational status. This requires data governance, quality checks, ownership rules, and appropriate access controls.
 
