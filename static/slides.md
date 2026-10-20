@@ -237,7 +237,7 @@
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center">
 
 <div>
-<img src="/app/static/photo_1.png" style="width:100%;max-height:390px;object-fit:contain">
+<img src="/mount/src/deepwell/static/photo_1.png" style="width:100%;max-height:390px;object-fit:contain">
 </div>
 
 <div style="font-size:0.78em;line-height:1.35">
