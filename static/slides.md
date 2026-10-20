@@ -346,7 +346,7 @@ The workflow uses spatially aware cross-validation across geographically distinc
 
 ---
 
-### The tuning
+## The tuning
 
 Optuna studies have been run for **Random Forest, XGBoost, and LightGBM** to find the best hyperparameter configurations.
 
