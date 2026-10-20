@@ -261,7 +261,7 @@ Use existing borehole records and spatial data to reduce uncertainty before dril
 
 ### Progress has been made, but billions of people are still left behind.
 
-![Global water-access statistics](app/static/global_water_stats.svg)
+![Global water-access statistics](https://raw.githubusercontent.com/lxynk/DeepWell/main/static/global_water_stats.svg)
 
 ---
 
