@@ -1,9 +1,232 @@
+<style>
+.reveal {
+    font-size: 40px !important;
+    color: #263746 !important;
+    background-color: #ffffff !important;
+}
+
+/* Title Slide Alignments */
+.reveal .slides section.title-slide,
+.reveal .slides section.title-slide h1,
+.reveal .slides section.title-slide h2,
+.reveal .slides section.title-slide h3,
+.reveal .slides section.title-slide p {
+    text-align: left !important;
+}
+
+/* Slide Canvas Layout */
+.reveal .slides section {
+    box-sizing: border-box;
+    padding: 24px 24px !important;
+    text-align: left;
+    line-height: 1.4;
+}
+
+/* Clear text shadow properties */
+.reveal .slides section,
+.reveal .slides section * {
+    text-shadow: none !important;
+}
+
+/* Cleaned Typography & Structural Hierarchy */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    color: #123047;
+    font-weight: 650;
+    text-transform: none;
+    letter-spacing: -0.025em;
+    text-align: left;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+}
+
+.reveal h1 {
+    font-size: 1.65em;
+    margin: 0 0 0.45em;
+}
+
+.reveal h2 {
+    font-size: 1.15em;
+    color: #247BA0 !important; /* Unified DeepWell Blue Accent */
+    margin: 0 0 0.65em;
+}
+
+.reveal h3 {
+    font-size: 0.9em;
+    margin: 0.6em 0 0.35em;
+}
+
+.reveal strong {
+    color: #123047;
+    font-weight: 700;
+}
+
+.reveal p,
+.reveal li {
+    font-size: 0.72em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.reveal p {
+    margin: 0 0 0.8em;
+}
+
+.reveal ul,
+.reveal ol {
+    margin: 0.3em 0 0.8em;
+    padding-left: 1.25em;
+}
+
+.reveal li {
+    margin: 0 0 0.4em;
+}
+
+/* Consistent List Markers and Hyperlinks */
+.reveal li::marker {
+    color: #247BA0 !important;
+}
+
+.reveal a {
+    color: #247BA0 !important;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Images and Tables */
+.reveal img {
+    display: block;
+    max-width: 100%;
+    max-height: 43vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0.5em auto 0.8em;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.reveal table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.65em;
+    margin: 0.6em 0;
+}
+
+.reveal th {
+    background: #123047;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.45em 0.6em;
+}
+
+.reveal th,
+.reveal td {
+    padding: 0.45em 0.6em;
+    border-bottom: 1px solid #DCE5E9;
+}
+
+.reveal tr:nth-child(even) td {
+    background: #F3F7F8;
+}
+
+/* Blockquotes, Inline Code and Dividers */
+.reveal blockquote {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0.8em 0;
+    padding: 0.65em 1em;
+    background: #EEF5FA !important;
+    border-left: 4px solid #247BA0 !important;
+    box-shadow: none;
+    font-style: normal;
+    text-align: left;
+}
+
+.reveal blockquote p {
+    margin: 0;
+}
+
+.reveal code {
+    font-size: 0.85em;
+    color: #247BA0 !important;
+    background: #EEF5FA !important;
+    padding: 0.1em 0.25em;
+    border-radius: 3px;
+}
+
+.reveal hr {
+    border: 0;
+    border-top: 2px solid #DCE5E9;
+    margin: 0.8em 0;
+}
+
+/* Navigation Mechanics */
+.reveal .slide-number {
+    color: #647783;
+    background: transparent;
+    font-size: 12px;
+}
+
+.reveal .progress {
+    background-color: #247BA0 !important;
+    height: 3px;
+}
+
+.reveal .controls,
+.reveal .controls * {
+    color: #247BA0 !important;
+}
+
+/* Responsive Mobile Layout Scaling */
+@media (max-width: 700px) {
+    .reveal .slides section {
+        padding: 16px 20px !important;
+    }
+
+    .reveal h1 {
+        font-size: 1.4em;
+    }
+
+    .reveal h2 {
+        font-size: 1em;
+    }
+
+    .reveal p,
+    .reveal li {
+        font-size: 0.68em;
+    }
+
+    .reveal img {
+        max-height: 34vh;
+    }
+}
+</style>
+
 <section class="title-slide">
 
-# DeepWell
-## Using spatial data to improve borehole siting in Kenya’s drylands
+<!-- Added min-height, margin, and width to stretch the container across the true vertical center of the viewport -->
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; width: 100%; height: 100%; min-height: 75vh; margin: auto 0;">
 
-**From borehole records to spatially informed groundwater research**
+<!-- Left Column: Content Block -->
+<div style="font-size: 0.78em; line-height: 1.35; text-align: left !important;">
+<h1 style="text-align: left !important; margin: 0 0 0.2em 0;">DeepWell</h1>
+<h2 style="text-align: left !important; margin: 0 0 1em 0; color: #247BA0;">Using spatial data to improve borehole siting in Kenya’s drylands</h2>
+
+<p style="text-align: left !important; margin: 2em 0 0.2em 0; font-weight: 600;">Sascha Alexeyenko</p>
+<p style="text-align: left !important; margin: 0; color: #647783;">DSR Final Project · 20-Oct-26</p>
+</div>
+
+<!-- Right Column: Image Block -->
+<div style="display: flex; justify-content: center; align-items: center;">
+<!-- <img src="/app/static/photo_1.png" style="width: 100%; max-height: 550px; object-fit: contain; margin: 0;"> -->
+</div>
+
+</div>
 
 </section>
 
@@ -14,26 +237,20 @@
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center">
 
 <div>
-
-<img src="/app/static/borehole_concept.svg" style="width:100%;max-height:390px;object-fit:contain">
-
+<img src="/app/static/photo_1.png" style="width:100%;max-height:390px;object-fit:contain">
 </div>
 
 <div style="font-size:0.78em;line-height:1.35">
 
-**Water must be available, reliable, and safe**
+**Water must be available, reliable, safe**
 
 In arid and semi-arid regions, groundwater is critical when surface sources are seasonal or scarce.
 
-A borehole can fail: it may be dry, yield too little water, or produce water of unsuitable quality.
+A borehole can easily fail: it may be dry, yield too little water, or produce water of unsuitable quality.
 
 **The task**
 
 Use existing borehole records and spatial data to reduce uncertainty before drilling.
-
-**The challenge**
-
-Insufficient records of unsuccessful drillings.
 
 </div>
 </div>
@@ -42,23 +259,17 @@ Insufficient records of unsuccessful drillings.
 
 ## Water access remains a global challenge
 
-Progress has been made, but billions of people are still left behind.
+### Progress has been made, but billions of people are still left behind.
 
 ![Global water-access statistics](/app/static/global_water_stats.svg)
-
-Source: WHO/UNICEF Joint Monitoring Programme (JMP), 2025 assessment of 2024 data.
 
 ---
 
 ## The burden is unevenly distributed
 
-Global averages hide large regional gaps
+### Global averages hide large regional gaps
 
 ![Regional drinking-water coverage](/app/static/regional_coverage.svg)
-
-These figures describe drinking-water services—not groundwater availability or borehole-drilling success.
-
-Source: WHO/UNICEF JMP, 2025 report and regional estimates.
 
 ---
 
@@ -80,23 +291,15 @@ Amref Health Africa reports that current geological assessments in Kenya’s ari
 
 That leaves substantial room to improve site selection and reduce the cost of unsuccessful drilling.
 
-Source: Amref Health Africa
-
 ---
 
 ## Related work: a shared ambition
 
-### Analytics for a Better World, Amref Health Africa, and ProRail
+### Analytics for a Better World, Amref Health Africa, ProRail
 
 A parallel initiative is developing a decision-support tool combining satellite, geological, and other spatial data to identify more promising borehole locations in Kenya’s drylands.
 
 Its stated ambition is to increase drilling success from around **60% to above 90%**. The public project description outlines the goal and planned work, but does not report numerical model-validation results or demonstrated field improvements.
-
-DeepWell shares the broader research question. Transparent evaluation, comparable targets, and field validation are essential to judge what any approach achieves.
-
-Source: https://analyticsbetterworld.org/impact/using-spatial-data-to-improve-borehole-drilling-in-kenyas-drylands
-
-Analytics for a Better World, “Using spatial data to improve borehole drilling in Kenya’s drylands” (2026).
 
 ---
 
@@ -112,7 +315,7 @@ A full-scale decision-support system should ultimately address three distinct ou
 - **Quantity / yield:** how much water can it reliably supply?
 - **Quality / salinity:** is the water suitable for its intended use?
 
-These outcomes need appropriate labels, predictors, and evaluation methods. The current success model is only one component of that larger goal.
+The current success model is only one component of that larger goal.
 
 ---
 
@@ -143,12 +346,10 @@ Nearby boreholes can share environmental conditions. A random train/test split m
 
 The workflow uses spatially aware cross-validation across geographically distinct groups.
 
-- **Balanced accuracy:** performance across both classes, accounting for class imbalance.
+- **Balanced accuracy:** performance across both classes.
 - **Failure recall:** the share of labelled failures correctly identified.
 - **Success recall:** the share of labelled successes correctly identified.
 - **Fold-to-fold variation:** consistency across spatial partitions.
-
-The reported 60% drilling success rate is not directly comparable to balanced accuracy. Evaluation must reflect the target, sample, and decision risk.
 
 ---
 
@@ -156,7 +357,7 @@ The reported 60% drilling success rate is not directly comparable to balanced ac
 
 Optuna studies have been run for **Random Forest, XGBoost, and LightGBM** to find the best hyperparameter configurations.
 
-![Optuna dashboard](/app/static/assets/obtuna_xgb.png)
+![Optuna dashboard](/app/static/assets/optuna_xgb.png)
 
 ---
 
@@ -164,11 +365,9 @@ Optuna studies have been run for **Random Forest, XGBoost, and LightGBM** to fin
 
 ![Best current model results](/app/static/model_results.svg)
 
+**Feature set E+T+A15+R+LUP:** elevation, terrain, hydrological accumulation, distance to rivers, and a hydrological landform measure.
+
 **Best Random Forest parameters:** `max_depth=16`, `min_samples_leaf=4`, `min_samples_split=2`, `max_features=0.5`.
-
-Feature set **E+T+A15+R+LUP** combines elevation, terrain, hydrological accumulation, distance to rivers, and a hydrological landform measure. The 300 labelled examples comprise 123 failures and 177 successes across 96 spatial groups, using 9 features.
-
-These are the best current exploratory results, not a deployment-ready estimate. Dataset definitions, model selection, and spatial validation must remain consistent when comparing experiments.
 
 ---
 
@@ -221,8 +420,6 @@ Regional drinking-water coverage alone does not establish where this specific bo
 
 ## What comes next?
 
-### Build evidence before building confidence
-
 1. **Strengthen labels:** document cleaning decisions and clarify ambiguous records.
 2. **Establish independent baselines:** evaluate Rural Focus and NDMA separately.
 3. **Add climate information:** investigate rainfall and aridity features.
@@ -233,22 +430,6 @@ Regional drinking-water coverage alone does not establish where this specific bo
 8. **Guide data collection:** test whether uncertainty-aware sampling improves the evidence base.
 9. **Test transferability:** assess new regions only where local data and validation are available.
 
-The aim is to determine where spatial data provides dependable, actionable evidence—and where it does not.
-
 ---
 
-# DeepWell
-## Better evidence for better-informed drilling decisions
-
-**A research prototype for more informed groundwater exploration.**
-
----
-
-# Sources and notes
-
-- WHO/UNICEF Joint Monitoring Programme (2025), *Progress on household drinking water, sanitation and hygiene 2000–2024*. https://washdata.org/reports/jmp-2025-wash-households
-- UNICEF Data, *Drinking water*. https://data.unicef.org/topic/water-and-sanitation/drinking-water/
-- Amref Health Africa / Analytics for a Better World (2026), *Using spatial data to improve borehole drilling in Kenya’s drylands*. https://analyticsbetterworld.org/impact/using-spatial-data-to-improve-borehole-drilling-in-kenyas-drylands
-- Natural Earth, low-resolution country boundaries: https://www.naturalearthdata.com/
-
-**Interpretation notes:** safely managed drinking water is a household service indicator, not a measure of groundwater potential. The ~60% figure is a reported drilling-success rate for Kenya’s arid and semi-arid lands, not a universal ML baseline. DeepWell metrics are exploratory. Initial dataset counts may differ from stricter prepared modelling subsets.
+# Thank you!

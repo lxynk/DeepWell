@@ -13,7 +13,7 @@ models = [
     {
         "name": "Random Forest",
         "image": "optuna_rf.png",
-        "best_model": "xxx",
+        "best_model": "",
         "parameters": [
             "Parameter 1: placeholder",
             "Parameter 2: placeholder",
@@ -23,7 +23,7 @@ models = [
     {
         "name": "XGBoost",
         "image": "optuna_xgb.png",
-        "best_model": "xxx",
+        "best_model": "",
         "parameters": [
             "Parameter 1: placeholder",
             "Parameter 2: placeholder",
@@ -33,7 +33,7 @@ models = [
     {
         "name": "LightGBM",
         "image": "optuna_lgbm.png",
-        "best_model": "xxx",
+        "best_model": "",
         "parameters": [
             "Parameter 1: placeholder",
             "Parameter 2: placeholder",
@@ -43,9 +43,9 @@ models = [
 ]
 
 params_code = """params = {
-    'learning_rate': 0.0751,
-    'max_depth': 8,
-    'min_child_weight': 1.83
+    'learning_rate': 0.000,
+    'max_depth': 0,
+    'min_child_weight': 0.000
 }"""
 
 for model in models:
@@ -63,7 +63,7 @@ for model in models:
 
     with details_col:
         st.markdown(f"### Best model: {model['best_model']}")
-        st.metric("Best score", "0.65555")
+        st.metric("Best score", "0.00000")
 
         st.markdown("**Model parameters**")
         for parameter in model["parameters"]:

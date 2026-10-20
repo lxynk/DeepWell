@@ -20,13 +20,13 @@ st.set_page_config(page_title="Spatial Explorer", page_icon="🗺️", layout="w
 # Assumes this page is saved at <project-root>/pages/02_Spatial_Explorer.py.
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
-PROCESSED_DIR = DATA_DIR / "processed"
+PROCESSED_DIR = DATA_DIR / "data"
 MODEL_DIR = ROOT / "models"
 DEFAULT_MODEL = MODEL_DIR / "rf_combined_E_T_A15_R_LUP.joblib"
 DEFAULT_METADATA = MODEL_DIR / "rf_combined_E_T_A15_R_LUP.json"
 RIVER_PATH_CANDIDATES = [
-    DATA_DIR / "raw/HydroRIVERS_v10_af_shp/HydroRIVERS_v10_af.shp",
-    DATA_DIR / "raw/kenya_add_features/hydrology/HydroRIVERS_v10_af_shp/HydroRIVERS_v10_af_shp/HydroRIVERS_v10_af.shp",
+    DATA_DIR / "HydroRIVERS_v10_af_shp/HydroRIVERS_v10_af.shp",
+    DATA_DIR / "HydroRIVERS_v10_af.shp",
 ]
 # Same study-area window used to extract rivers_study. The source lines are retained whole.
 RIVER_BBOX = (34.0183, 0.97746, 39.64795, 5.52061)
@@ -35,8 +35,8 @@ METRIC_CRS = "EPSG:32636"
 # Explicit source mapping for the known project rasters. Relative paths are rooted at the
 # repository root. Hydrology rasters store raw values; the training-time log transforms are
 # reproduced below. Terrain derivative band order: 1=slope, 2=mrrtf, 3=mrvbf.
-HYDROLOGY_DIR = DATA_DIR / "raw/kenya_add_features/hydrology/cropped"
-TERRAIN_DIR = DATA_DIR / "raw/kenya_add_features/terrain"
+HYDROLOGY_DIR = DATA_DIR
+TERRAIN_DIR = DATA_DIR
 
 TERRAIN_RASTERS = {
     "elevation_srtm": [
@@ -66,8 +66,8 @@ HYDROLOGY_RASTERS = {
 # not sampled from hyd_af_ldn_15s. The order-3-plus variant is intentionally not used.
 
 DATASET_OPTIONS = {
-    "Rural Focus — Marsabit": ["rf_spatial.gpkg", "marsabit_common.gpkg", "rf_prepared.gpkg", "rf_cleaned.gpkg", "rf.gpkg"],
-    "Rural Focus — Turkana": ["rf_turkana_spatial.gpkg", "rf_turkana_prepared.gpkg"],
+    "Rural Focus — Marsabit": ["rf_spatial.gpkg", "marsabit_common.gpkg", "rf_prepared.gpkg"],
+    "Rural Focus — Turkana": ["turkana_model.gpkg", "turkana_terrain.gpkg"],
 }
 
 LABEL_CANDIDATES = ["target_success", "target", "success", "status", "functionality", "functional_status"]
@@ -80,7 +80,7 @@ def first_existing(paths: list[Path]) -> Path | None:
 
 
 def find_dataset_path(dataset_label: str) -> Path | None:
-    candidates = [PROCESSED_DIR / name for name in DATASET_OPTIONS[dataset_label]]
+    candidates = [DATA_DIR / name for name in DATASET_OPTIONS[dataset_label]]
     return first_existing(candidates)
 
 

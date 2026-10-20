@@ -4,10 +4,6 @@ import streamlit as st
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
-dashboard_tab, presentation_tab = st.tabs(
-    ["Dashboard", "Presentation"]
-)
-
 st.title("DeepWell")
 st.subheader("Smarter groundwater exploration")
 
