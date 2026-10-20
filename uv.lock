@@ -81,7 +81,7 @@ requires-dist = [
     { name = "pystac-client", specifier = "==0.9.0" },
     { name = "pyzmq", specifier = "==26.2.1" },
     { name = "rapidfuzz", specifier = "==3.14.5" },
-    { name = "rasterio", specifier = "==1.3.2" },
+    { name = "rasterio", specifier = "==1.3.10" },
     { name = "requests", specifier = "==2.34.2" },
     { name = "scikit-learn", specifier = "==1.7.2" },
     { name = "scipy", specifier = "==1.15.3" },
@@ -3765,7 +3765,7 @@ wheels = [
 
 [[package]]
 name = "rasterio"
-version = "1.3.2"
+version = "1.3.10"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "affine" },
@@ -3778,11 +3778,20 @@ dependencies = [
     { name = "setuptools" },
     { name = "snuggs" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/91/84/cbe179360554bc9d4673e4986c520899135cab180ec9818bad19d0a31f14/rasterio-1.3.2.tar.gz", hash = "sha256:a91b32f649bc5aa3259909349258eb7999b7e830375f63cd37ade2082066ec1c", size = 404915, upload-time = "2022-08-19T18:03:35.543Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/26/05/f7c3ee93f270fbd77f7a2d58f2333a21fdf3ef9526a8f0b2a4d5d3d83184/rasterio-1.3.10.tar.gz", hash = "sha256:ce182c735b4f9e8735d90600607ecab15ef895eb8aa660bf665751529477e326", size = 412856, upload-time = "2024-04-12T18:20:35.487Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/90/02/37f12571d08bf09493732eefb810215ad069570d0cc0ca3ae33c0c89a1f2/rasterio-1.3.2-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:21b941f179f320b8c671f2daf2b2b4e2bef8841a059c46ce86a734311ab84b82", size = 31063717, upload-time = "2022-08-19T18:03:00.879Z" },
-    { url = "https://files.pythonhosted.org/packages/7a/56/c3371aea4ff867441ef6f6d2798130d5015383ed0504fe13b71033dbdf50/rasterio-1.3.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:5a2b0349dcf67714fda4988b17bdc5ff2cda680713a323b49a352ddd1987e6e8", size = 20854128, upload-time = "2022-08-19T18:03:05.816Z" },
-    { url = "https://files.pythonhosted.org/packages/05/da/423f5d89f41c735e3618f1e97165e7a5beaa9b4bd1f3257ecf1a4443428e/rasterio-1.3.2-cp310-cp310-win_amd64.whl", hash = "sha256:e2709949603fedf199c5e597aa9f36cc4c09818ab8a47e644c1c06790ee0c5ee", size = 22148467, upload-time = "2022-08-19T18:03:09.918Z" },
+    { url = "https://files.pythonhosted.org/packages/ed/da/5120074e326f52541324b86bb61544be1fc330887736bb5d013c28d0c107/rasterio-1.3.10-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:2ef27c3eff6f44f8b5d5de228003367c1843593edf648d85c0dc1319c00dc57d", size = 20645540, upload-time = "2024-04-12T18:13:56.513Z" },
+    { url = "https://files.pythonhosted.org/packages/2b/2e/6b2c18e4bd39b92e8eeb4fedd53d79c374a071ec05663936a136d03d7638/rasterio-1.3.10-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:c711b497e9ef0c4f5e1c01e34ba910708e066e1c4a69c25df18d1bcc04481287", size = 18179203, upload-time = "2024-04-12T18:14:04.01Z" },
+    { url = "https://files.pythonhosted.org/packages/cb/87/0cee54776b4a28ba722b8525f16bc3868296fae1e0854251c25096650981/rasterio-1.3.10-cp310-cp310-manylinux2014_x86_64.whl", hash = "sha256:d1ac85857144cb8075e332e9d908b65426d30ddc1f59f7a04bcf6ed6fd3c0d47", size = 21499833, upload-time = "2024-04-12T18:14:11.583Z" },
+    { url = "https://files.pythonhosted.org/packages/93/25/df1a1da0c0227aec2a19f4efa0f9a5580f3eac385de56c65952e1c716c3e/rasterio-1.3.10-cp310-cp310-win_amd64.whl", hash = "sha256:ef8a496740df1e68f7a3d3449aa3be9c3210c22f4bb78a4a9e1c290183abd9b1", size = 24331554, upload-time = "2024-04-12T18:14:19.302Z" },
+    { url = "https://files.pythonhosted.org/packages/16/da/b865cb4c588495e09c62a02c77b1c965ef478e329070233ceb0d6c45a4f9/rasterio-1.3.10-cp311-cp311-macosx_10_15_x86_64.whl", hash = "sha256:97d867cada29f16cb83f1743217f775f8b982676fcdda77671d25abb26698159", size = 20648942, upload-time = "2024-04-12T18:14:26.107Z" },
+    { url = "https://files.pythonhosted.org/packages/4f/f7/e4ac8f3dfd11e4c718e9281a7e41417462100bc0bc575059a8eeab1e8bf0/rasterio-1.3.10-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:505b3e659eb3b137192c25233bf7954bc4997b1a474bae9e129fbd5ac2619404", size = 18182984, upload-time = "2024-04-12T18:14:31.694Z" },
+    { url = "https://files.pythonhosted.org/packages/f7/0d/6dd65a77c4d2e0809d18edb7461f53a7597b19b886afff023ef5d4df8512/rasterio-1.3.10-cp311-cp311-manylinux2014_x86_64.whl", hash = "sha256:30f27e309a14a70c821d10a0ea18b110968dc2e2186b06a900aebd92094f4e00", size = 21497348, upload-time = "2024-04-12T18:14:38.38Z" },
+    { url = "https://files.pythonhosted.org/packages/03/d9/40d44154946a55e8fe63b21d44120dae02f4f62500338d09ee0d29d59025/rasterio-1.3.10-cp311-cp311-win_amd64.whl", hash = "sha256:cbb2eea127328302f9e3158a000363a7d9eea22537378dee4f824a7fa2d78c05", size = 24338892, upload-time = "2024-04-12T18:14:45.645Z" },
+    { url = "https://files.pythonhosted.org/packages/66/3b/eca584055f0375c5ec9643412e12a69397c8d5327007f89b903d3bf7f132/rasterio-1.3.10-cp312-cp312-macosx_10_15_x86_64.whl", hash = "sha256:3a9c4fb63e050e11bcd23e53f084ca186b445f976df1f70e7abd851c4072837f", size = 20603531, upload-time = "2024-04-12T18:14:51.967Z" },
+    { url = "https://files.pythonhosted.org/packages/1f/9f/1a771cc98cadd0e189e740401f5040c31f7373d75365d6655795faf33536/rasterio-1.3.10-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:7c7ddca79444fd3b933f4cd1a1773e9f7839d0ce5d76e600bdf92ee9a79b95f8", size = 18157541, upload-time = "2024-04-12T18:14:57.618Z" },
+    { url = "https://files.pythonhosted.org/packages/ef/91/57cfffc5cb6acf24d832c262ac42b0b59fd813a206976cf113545ac9fac2/rasterio-1.3.10-cp312-cp312-manylinux2014_x86_64.whl", hash = "sha256:f9cd757e11cfb07ef39b1cc79a32497bf22aff7fec41fe330b868cb3043b4db5", size = 21526437, upload-time = "2024-04-12T18:15:03.734Z" },
+    { url = "https://files.pythonhosted.org/packages/0b/92/7c2f152cb51d0e9aca768080daf3211e2dad1706b9f5669a17b6b87bfeeb/rasterio-1.3.10-cp312-cp312-win_amd64.whl", hash = "sha256:7e653968f64840654d277e0f86f8666ed8f3030ba36fa865f420f9bc38d619ee", size = 24315240, upload-time = "2024-04-12T18:15:11.129Z" },
 ]
 
 [[package]]
