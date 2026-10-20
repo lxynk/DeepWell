@@ -277,7 +277,7 @@ Use existing borehole records and spatial data to reduce uncertainty before dril
 
 ### From the global challenge to a local test case
 
-![Locator maps showing Kenya within Africa and the approximate Marsabit and Turkana study areas](/app/static/locator_maps.svg)
+![Locator maps showing Kenya within Africa and the approximate Marsabit and Turkana study areas](app/static/locator_maps.svg)
 
 DeepWell investigates whether spatial and environmental data can help predict borehole outcomes before drilling, initially using records from **Marsabit and Turkana counties**.
 
