@@ -275,11 +275,9 @@ Use existing borehole records and spatial data to reduce uncertainty before dril
 
 ## DeepWell: a study in northern Kenya
 
-### From the global challenge to a local test case
+### From the global challenge to a local test case: the counties Marsabit and Turkana
 
 ![Locator maps showing Kenya within Africa and the approximate Marsabit and Turkana study areas](https://raw.githubusercontent.com/lxynk/DeepWell/main/static/locator_maps.svg)
-
-DeepWell investigates whether spatial and environmental data can help predict borehole outcomes before drilling, initially using records from **Marsabit and Turkana counties**.
 
 ---
 
@@ -323,12 +321,7 @@ The current success model is only one component of that larger goal.
 
 ![Data cleaning funnel](https://raw.githubusercontent.com/lxynk/DeepWell/main/static/data_funnel.svg)
 
-The original records required substantial cleaning and auditing:
-- checking coordinates
-- clarifying outcome labels
-- identifying ambiguous or conflicting records
-- handling missing information
-- addressing the intrinsic disbalance in the data
+The original records required substantial cleaning and auditing: checking coordinates, clarifying outcome labels, identifying ambiguous or conflicting records, handling missing information, addressing the intrinsic disbalance in the data.
 
 ---
 
@@ -383,52 +376,6 @@ It can help users:
 - Compare predictions with local environmental context.
 - Investigate surprising results and potential failure cases.
 - Inspect and communicate model outputs.
-
----
-
-## The app can do more than display predictions
-
-### A shared data resource—and a way to guide new data collection
-
-![Potential data and analysis feedback loop](https://raw.githubusercontent.com/lxynk/DeepWell/main/static/app_learning_loop.svg)
-
-**1. A practical place to store borehole information.** A shared, structured repository could help drilling teams record locations, outcomes, yield, water quality, and operational status. This requires data governance, quality checks, ownership rules, and appropriate access controls.
-
-**2. Analysis-driven data collection.** Predictions and uncertainty could help identify locations where new investigations would be most informative—filling geographic gaps, testing uncertain predictions, or distinguishing between competing model explanations.
-
-This creates a potential feedback loop: better records support better models, and analysis helps guide what data to collect next.
-
----
-
-## Could the approach transfer to other regions?
-
-### Transfer the workflow—not blindly the model
-
-The workflow could be useful in other drylands, including parts of Africa, Asia, and Latin America: combine local records with spatial features, audit labels, define success for local decisions, and evaluate using geographically realistic validation.
-
-**But a model trained in one region is not automatically transferable.**
-
-- Geology, aquifer systems, and groundwater conditions differ.
-- Borehole records may be sparse, biased, or inconsistent.
-- Definitions of success, adequate yield, and acceptable water quality vary.
-- Climate, infrastructure, drilling practices, and data availability differ.
-- Independent local validation and often recalibration or retraining are needed.
-
-Regional drinking-water coverage alone does not establish where this specific borehole-siting approach would be useful. Transferability must be tested in particular hydrogeological settings.
-
----
-
-## What comes next?
-
-1. **Strengthen labels:** document cleaning decisions and clarify ambiguous records.
-2. **Establish independent baselines:** evaluate Rural Focus and NDMA separately.
-3. **Add climate information:** investigate rainfall and aridity features.
-4. **Improve evaluation:** examine spatial errors, uncertainty, and failure detection.
-5. **Compare models:** continue controlled RF, XGB, and LGBM comparisons.
-6. **Expand targets:** develop yield and water-quality/salinity models when suitable labels are available.
-7. **Develop the app:** connect predictions with transparent explanations and structured borehole data.
-8. **Guide data collection:** test whether uncertainty-aware sampling improves the evidence base.
-9. **Test transferability:** assess new regions only where local data and validation are available.
 
 ---
 
