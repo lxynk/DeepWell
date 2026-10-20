@@ -1,0 +1,263 @@
+/* .reveal .slides section.title-slide {
+    text-align: center !important;
+} */
+
+/* .reveal .slides section.title-slide h1,
+.reveal .slides section.title-slide h2,
+.reveal .slides section.title-slide h3,
+.reveal .slides section.title-slide p {
+    text-align: center !important;
+} */
+
+.reveal {
+    /* font-size: 40px; */
+    /* color: #263746; */
+    /* background: #ffffff; */
+}
+
+/* Slide canvas */
+.reveal .slides section {
+    box-sizing: border-box;
+    padding: 24px 24px !important;
+    text-align: left;
+    line-height: 1.4;
+}
+
+/* Headings */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+    color: #123047;
+    font-weight: 650;
+    text-transform: none;
+    letter-spacing: -0.025em;
+    text-align: left;
+    line-height: 1.15;
+    overflow-wrap: break-word;
+}
+
+/* Blue accents */
+
+.reveal li::marker {
+    color: #247BA0;
+}
+
+.reveal a {
+    color: #247BA0;
+}
+
+.reveal blockquote {
+    background: #EEF5FA;
+    border-left-color: #247BA0;
+}
+
+.reveal .progress,
+.reveal .controls {
+    color: #247BA0;
+}
+
+.reveal th {
+    background: #123047;
+    color: #ffffff;
+}
+
+.reveal h1 {
+    font-size: 1.65em;
+    margin: 0 0 0.45em;
+}
+
+.reveal h2 {
+    font-size: 1.15em;
+    color: #247BA0;
+    margin: 0 0 0.65em;
+}
+
+.reveal h3 {
+    font-size: 0.9em;
+    margin: 0.6em 0 0.35em;
+}
+
+/* Body text */
+.reveal p,
+.reveal li {
+    font-size: 0.72em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.reveal p {
+    margin: 0 0 0.8em;
+}
+
+.reveal ul,
+.reveal ol {
+    margin: 0.3em 0 0.8em;
+    padding-left: 1.25em;
+}
+
+.reveal li {
+    margin: 0 0 0.4em;
+}
+
+.reveal li::marker {
+    color: #0D9294;
+}
+
+/* Emphasis */
+.reveal strong {
+    color: #123047;
+    font-weight: 700;
+}
+
+.reveal a {
+    color: #087E83;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Images and diagrams */
+.reveal img {
+    display: block;
+    max-width: 100%;
+    max-height: 43vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: 0.5em auto 0.8em;
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+/* Tables */
+.reveal table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.65em;
+    margin: 0.6em 0;
+}
+
+.reveal th {
+    background: #123047;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+}
+
+.reveal th,
+.reveal td {
+    padding: 0.45em 0.6em;
+    border-bottom: 1px solid #DCE5E9;
+}
+
+.reveal tr:nth-child(even) td {
+    background: #F3F7F8;
+}
+
+/* Blockquotes and callouts */
+.reveal blockquote {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 0.8em 0;
+    padding: 0.65em 1em;
+    background: #EFF7F6;
+    border-left: 4px solid #0D9294;
+    box-shadow: none;
+    font-style: normal;
+    text-align: left;
+}
+
+.reveal blockquote p {
+    margin: 0;
+}
+
+/* Code, if needed */
+.reveal code {
+    font-size: 0.85em;
+    color: #087E83;
+    background: #F1F5F6;
+    padding: 0.1em 0.25em;
+    border-radius: 3px;
+}
+
+/* Horizontal divider */
+.reveal hr {
+    border: 0;
+    border-top: 2px solid #DCE5E9;
+    margin: 0.8em 0;
+}
+
+/* Slide numbers and navigation */
+.reveal .slide-number {
+    color: #647783;
+    background: transparent;
+    font-size: 12px;
+}
+
+.reveal .progress {
+    color: #0D9294;
+    height: 3px;
+}
+
+.reveal .controls {
+    color: #0D9294;
+}
+
+/* Keep fragments and transitions visually clean */
+.reveal .slides section,
+.reveal .slides section * {
+    text-shadow: none;
+}
+
+/* DeepWell — blue accent overrides */
+.reveal h2,
+.reveal a {
+color: #247BA0 !important;
+}
+
+.reveal li::marker {
+color: #247BA0 !important;
+}
+
+.reveal blockquote {
+background: #EEF5FA !important;
+border-left: 4px solid #247BA0 !important;
+}
+
+.reveal .progress {
+background-color: #247BA0 !important;
+}
+
+.reveal .controls {
+color: #247BA0 !important;
+}
+
+.reveal code {
+color: #247BA0 !important;
+background: #EEF5FA !important;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+    .reveal .slides section {
+        padding: 16px 20px !important;
+    }
+
+    .reveal h1 {
+        font-size: 1.4em;
+    }
+
+    .reveal h2 {
+        font-size: 1em;
+    }
+
+    .reveal p,
+    .reveal li {
+        font-size: 0.68em;
+    }
+
+    .reveal img {
+        max-height: 34vh;
+    }
+}
